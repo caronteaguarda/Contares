@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contares. Asociación artesano-cultural</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-image: url('ContaresLogo.png');
+            background-size: cover; /* Ocupa todo el fondo */
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            position: relative;
+            height: 300px; /* Ajusta la altura según lo necesites */
+        }
+
+        /* Fondo oscuro semitransparente para mejorar la legibilidad del texto */
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Oscurece un poco el fondo */
+            z-index: 0;
+        }
+
+        h1 {
+            position: relative;
+            z-index: 1;
+            margin: 0;
+            font-size: 2em;
+        }
+
+        p.intro-text {
+            font-size: 1.2em;
+            margin: 20px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #333;
+        }
+
+        nav {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .nav-button {
+            padding: 12px 20px;
+            background-color: #555;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            min-width: 200px;
+            text-align: center;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .nav-button {
+                width: 100%;
+                max-width: 90%;
+            }
+        }
+
+        /* Estilo para el botón de inscripción en la esquina */
+        .inscripcion-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #28a745; /* Verde */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .inscripcion-button:hover {
+            background-color: #218838; /* Verde más oscuro */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contares. Asociación artesano-cultural</h1>
+        <!-- Botón de inscripción -->
+        <a href="https://forms.gle/ahmuPFqgFGya31Ru5" class="inscripcion-button" target="_blank">Inscripción</a>
+    </header>
+
+    <p class="intro-text">Contares es una asociación que promueve el arte y la cultura. Tiene varias secciones gestionadas por grupos de coordinación, donde los miembros participan activamente en distintas áreas de expresión artística. Cada sección ofrece actividades y eventos para fomentar el intercambio cultural y el aprendizaje mutuo.</p>
+
+    <nav>
+        <a href="pagina1.html" class="nav-button">Música - Espectáculo</a>
+        <a href="pagina2.html" class="nav-button">Teatro</a>
+        <a href="pagina3.html" class="nav-button">Artes Plásticas</a>
+        <a href="pagina4.html" class="nav-button">Cerámica</a>
+        <a href="pagina5.html" class="nav-button">Literatura</a>
+        <a href="pagina6.html" class="nav-button">Logística y Decoración</a>
+    </nav>
+</body>
+</html>
